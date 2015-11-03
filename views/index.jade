@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Trails
+  for trail in trails
+    a(href="/trails/" + trail._id)
+      h4 #{trail.name}
