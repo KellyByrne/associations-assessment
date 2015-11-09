@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 States on #{trail.name}
+  for state in states
+    a(href='/trails/states/' + state._id)
+      h4 #{state.name}

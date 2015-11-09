@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1 Add New Park to #{state[0].name}
+	form(action='/trails/states/' + state[0]._id, method="post")
+		label Park Name 
+			input(type="text", name='name')
+		br
+		br
+		input(type='submit')

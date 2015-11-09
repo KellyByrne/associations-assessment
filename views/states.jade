@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 Parks in #{state.name}
+  for park in parks
+    h3 #{park.name}
+  a(href='/trails/states/' + state._id + '/edit')
+    button Add New Park
